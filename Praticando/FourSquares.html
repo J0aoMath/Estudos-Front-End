@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--https://www.w3.org/TR/2011/REC-CSS2-20110607/visuren.html#q9.0-->
+<!--
+'display'
+Value:  	inline | block | list-item | inline-block | 
+table | inline-table | table-row-group | table-header-group | 
+table-footer-group | table-row | table-column-group | 
+table-column | table-cell | table-caption | none | inherit
+
+Initial:  	inline
+Applies to:  	all elements
+Inherited:  	no
+Percentages:  	N/A
+Media:  	all
+Computed value:  	see text
+--
+'position'
+Value:  	static | relative | absolute | fixed | inherit
+Initial:  	static
+Applies to:  	all elements
+Inherited:  	no
+Percentages:  	N/A
+Media:  	visual
+Computed value:  	as specified
+
+An element is said to be positioned if its 'position' property has a value other than 'static'. Positioned elements generate positioned boxes, laid out according to four properties:
+
+'top'
+Value:  	<length> | <percentage> | auto | inherit
+Initial:  	auto
+Applies to:  	positioned elements
+Inherited:  	no
+Percentages:  	refer to height of containing block
+Media:  	visual
+Computed value:  	if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+This property specifies how far an absolutely positioned box's top margin edge is offset below the top edge of the box's containing block. For relatively positioned boxes, the offset is with respect to the top edges of the box itself (i.e., the box is given a position in the normal flow, then offset from that position according to these properties).
+
+'right'
+Value:  	<length> | <percentage> | auto | inherit
+Initial:  	auto
+Applies to:  	positioned elements
+Inherited:  	no
+Percentages:  	refer to width of containing block
+Media:  	visual
+Computed value:  	if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+Like 'top', but specifies how far a box's right margin edge is offset to the left of the right edge of the box's containing block. For relatively positioned boxes, the offset is with respect to the right edge of the box itself.
+
+'bottom'
+Value:  	<length> | <percentage> | auto | inherit
+Initial:  	auto
+Applies to:  	positioned elements
+Inherited:  	no
+Percentages:  	refer to height of containing block
+Media:  	visual
+Computed value:  	if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+Like 'top', but specifies how far a box's bottom margin edge is offset above the bottom of the box's containing block. For relatively positioned boxes, the offset is with respect to the bottom edge of the box itself.
+
+'left'
+Value:  	<length> | <percentage> | auto | inherit
+Initial:  	auto
+Applies to:  	positioned elements
+Inherited:  	no
+Percentages:  	refer to width of containing block
+Media:  	visual
+Computed value:  	if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+
+-->
+
+<hmtl lang="en">
+    <head>
+        <title>Four Divs</title>
+        <meta charset="UTF-8">
+        <style>
+            div.topleft{
+                background-color: green;
+                display: block;
+                width: 50%;
+                height: 50%;
+            }
+            div.topright{
+                background-color: blue;
+                display: block;
+                width: 50%;
+                height: 50%;
+            }
+            div.botleft{
+                background-color: yellow;
+                display: block;
+                width: 50%;
+                height: 50%;
+            }
+            div.botright{
+                background-color: red;
+                display: block;
+                width: 50%;
+                height: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topleft"><p>a</p></div>
+        <div class="topright"><p>a</p></div>
+        <div class="botleft"><p>a</p></div>
+        <div class="botright"><p>a</p></div>
+    </body>
+</hmtl>
