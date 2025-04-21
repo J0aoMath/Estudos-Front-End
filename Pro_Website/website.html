@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Vitor</title>
+
+    <style>
+        :root{
+            --color1:#D89584;
+        }
+        body{
+            margin: 0;
+        }
+        div.cover{
+            background: url(cover_overlay.png) no-repeat center/100% 100%,url(Cover.jpg) no-repeat center/cover;
+            height: 360px;
+            position:relative;
+        }
+        img.cover-profile{
+            height: 100px;
+            position: relative;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: 50px;
+        }
+        h1{
+            color:white;
+            text-align: center;
+        }
+        div.cover p{
+            color: lightgray;
+            text-align: center;
+        }
+        div.cover-contact{
+            background-color: #ff000080;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-left: 4px solid var(--color1);
+            padding-left: 8px;
+        }
+        div.cover-contact a{
+            display:block;
+            margin-top: 10px;
+            color: white;
+            font-size:14
+        }
+        a.cover-button{
+            background-color: #00000050;
+            display: inline-block;
+            border: 3px solid var(--color1);
+            padding: 8px 20px;
+            color: var(--color1);
+        }
+        div.cover-button a:hover{
+            color:white;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img class="cover-profile" src="profile.png"/>
+        <h1>João Vitor</h1>
+        <p>Freelance developer</p>
+        <div class="cover-contact">
+            <a href="mailto:joaomath.develop@gmail.com?subject=Contact%20from%20joaovitor.com">joaomath.develop@gmail.com</a>
+            <a href="tel:+5511947063609">11 947063603</a>
+        </div>
+        <div class="cover-button" style="text-align: center">
+            <a class="cover-button" href="mailto:joaomath.develop@gmail.com?subject=Contact%20from%20joaovitor.com"style="text-decoration: none">CONTACT ME</a>
+        </div>
+    </div>
+    
+</body>
+</html>
